@@ -24,11 +24,11 @@ def assembled_matrix
 end
 
 def sorted_matrix
-  CONVENTIONAL_PRODUCE.sort
-  ORGANIC_PRODUCE.sort
+  CONVENTIONAL_PRODUCE_sorted = CONVENTIONAL_PRODUCE.sort
+  ORGANIC_PRODUCE_sorted = ORGANIC_PRODUCE.sort
   alpha_array = [
-  CONVENTIONAL_PRODUCE,
-  ORGANIC_PRODUCE,
+  CONVENTIONAL_PRODUCE_sorted,
+  ORGANIC_PRODUCE_sorted,
 ]
 end
 
