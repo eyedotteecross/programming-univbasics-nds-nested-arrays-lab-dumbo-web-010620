@@ -24,7 +24,12 @@ def assembled_matrix
 end
 
 def sorted_matrix
-  CONVENTIONAL_PRODUCE.sort
+  CONVENTIONAL_PRODUCE.sort!
+  ORGANIC_PRODUCE.sort!
+  alpha_array = [
+  CONVENTIONAL_PRODUCE,
+  ORGANIC_PRODUCE,
+]
 end
 
 def matrix_lookup(matrix, row, column)
